@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
@@ -24,43 +24,24 @@
   <section class="navigation">
     <div class="nav-container">
       <div class="brand">
-        <a href="#!">techmarketz</a>
+        <a href="#!"><img src="./img/logo2d-1.png" alt="logo" class="nav-logo"></a>
       </div>
       <nav>
         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
         <ul class="nav-list">
           <li>
-            <a href="./index.html">Home</a>
+            <a href="./index.html" class="nav-a">Home</a>
           </li>
           <li>
-            <a href="./about.html">About</a>
+            <a href="./about.html" class="nav-a">About</a>
           </li>
           <li>
-            <a href="#!">Services</a>
-            <ul class="nav-dropdown" style="font-size: 1.2rem;">
-              <li>
-                <a href="./webDesign.html">Web Design</a>
-              </li>
-              <li>
-                <a href="#!">SOCIAL MEDIA MARKETING</a>
-              </li>
-              <li>
-                <a href="#!">PAY PER CLICK</a>
-              </li>
-              <li>
-                <a href="#!">SOFTWARE DEVELOPMENT</a>
-              </li>
-              <li>
-                <a href="#!">IOS/ANDROID DEVELOPMENT</a>
-              </li>
-            </ul>
+            <a href="./services.html" class="nav-a">Services</a>
+      
           </li>
           <li>
-            <a href="#!">Pricing</a>
-          </li>
-          <li>
-            <a href="#!">Portfolio</a>
-            <ul class="nav-dropdown">
+            <a href="#!" class="nav-a">Portfolio</a>
+            <!-- <ul class="nav-dropdown">
               <li>
                 <a href="#!">Web Design</a>
               </li>
@@ -70,10 +51,10 @@
               <li>
                 <a href="#!">Graphic Design</a>
               </li>
-            </ul>
+            </ul> -->
           </li>
           <li>
-            <a href="#!">Contact</a>
+            <a href="#!" class="nav-a">Contact</a>
           </li>
         </ul>
       </nav>
@@ -83,11 +64,13 @@
     <header class="header">
       <div class="row">
         <div class="col-1-of-2" data-aos="fade-left">
+
           <div class="header__bullet-points">
-          <h1 class="header__bullet-points--heading u-margin-bottom-medium main-heading">GET ISO 9001 CERTIFICATION FOR RS 3499/- ONLY</h1>
+          <h1 class="header__bullet-points--heading u-margin-bottom-medium main-heading">GET ISO 9001 CERTIFICATION FOR RS 3499/-</h1>
+          <span id="typed"></span>
           <div class="header__bullet-points--text-box">
             <p class="header__bullet-points--text-box--text"><i class="fas fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <p class="header__bullet-points--text-box--text"><i class="fas fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="header__bullet-points--text-box--text1"><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <p class="header__bullet-points--text-box--text"><i class="fas fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.Iure, recusandae.</p>
             <p class="header__bullet-points--text-box--text"><i class="fas fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <p class="header__bullet-points--text-box--text"><i class="fas fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -116,7 +99,7 @@
                 <textarea name="msg" class="input" required="true"></textarea>
                 <label class="form-label">Message</label>
               </div>
-              <input type="submit" value="Submit" name="submit">
+              <input type="submit" value="Submit" name="submit" class="btn-big">
             </form>
           </div>
 
@@ -138,8 +121,9 @@
 
         <div class="row services-details--container">
           <div class="col-1-of-4"  data-aos="fade-right">
+              
             <div class="services-details">
-              <i class="fas fa-desktop services-details__icon"></i>
+                <i class="fas fa-desktop services-details__icon"></i>
               <h3 class="services-details--heading heading-turtuary u-margin-bottom-small"><span
                   class="slim-text">WEBSITE</span> DESIGN</h3>
               <p class="services-details--text paragraph">Techmarketz Design will work with you to find out what you need
@@ -259,7 +243,7 @@
 
 
     <section class="our-process" data-aos="zoom-in">
-      <div class="our-process__heading--container">
+      <div class="why-us__heading--container">
         <h1 class="section-heading u-margin-bottom-medium" style="text-align: center;"><span class="slim-text">Our</span> PROCESS</h1>
       </div>
       <div class="row-5">
@@ -328,8 +312,8 @@
 
 
 <section class="testimonials" data-aos="fade-up">
-    <div class="why-us__heading--container" data-aos="fade-up">
-        <h1 class="section-heading u-margin-bottom-medium" ><span class="slim-text">OUR</span> WORK</h1>
+    <div class="why-us__heading--container work-slider--head" data-aos="fade-up">
+        <h1 class="section-heading u-margin-bottom-medium why-us--text" ><span class="slim-text">OUR</span> WORK</h1>
       </div>
 
 	<div class="container" >
@@ -472,63 +456,74 @@
     </section> 
 
       
-      <footer class="site-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <h6>About</h6>
-                <p class="text-justify">Techmarketz <i>excels at custom design </i> and front end development. We love taking on challenging projects that require full-on content strategy, thoughtful design, demanding development, and ongoing marketing.</p>
-              </div>
+
+    <footer class="footer-distributed">
     
-              <div class="col-xs-6 col-md-3">
-                <h6>MAIN LINKS</h6>
-                <ul class="footer-links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="http://scanfcode.com/category/front-end-development/">About</a></li>
-                  <li><a href="http://scanfcode.com/category/back-end-development/">Services</a></li>
-                  <li><a href="http://scanfcode.com/category/java-programming-language/">Portfolio</a></li>
-                  <li><a href="http://scanfcode.com/category/android/">Contact</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-xs-6 col-md-3">
-                <h6>ADDRESS</h6>
-                Address: A2B/174-c Ekta Apartment Paschim Vihar Delhi India
-                <ul class="footer-links">
-                  <li><a href="#"></a>info@techmarketz.com</a></li>
-                  <li><a href="#">Mob: 9899526911</a></li>
-                  <li><a href="#">Skype:jitesh.verma4</a></li>
-                </ul>
-              </div>
-            </div>
-            <hr>
+          <div class="footer-left">
+            <div  class="footer-logo">
+            <img src="./img/logo2d-1.png" alt="LOGO">
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
-             <a href="#">Techmarketz.com</a>.
-                </p>
-              </div>
     
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <ul class="social-icons">
-                  <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></i></a></li>
-                  <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-                  <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
-                </ul>
-              </div>
+            <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+              
+              <a href="#">About</a>
+            
+              <a href="#">Services</a>
+            
+              <a href="#">Portfolio</a>
+              
+              <a href="#">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">Techmarketz © 2019</p>
+          </div>
+    
+          <div class="footer-center">
+           <div  class="footer-center__content">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>A2B/174-c Ekta Apartment </span> New Delhi, Paschim Vihar</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+91 9899526911</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">info@techmarketz.com</a></p>
             </div>
           </div>
-    </footer> 
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About Us</span>
+              Techmarketz excels at custom design and front end development. We love taking on challenging projects that require full-on content strategy, thoughtful design, demanding development, and ongoing marketing.
+            </p>
+    
+            <div class="footer-icons">
+    
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+    
+            </div>
+    
+          </div>
+    
+        </footer>
   </main>
 </body>
 
 
 <script src="https://kit.fontawesome.com/94b238a064.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/header.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/slider.js"></script>

@@ -24,8 +24,7 @@
 
 window.addEventListener('scroll',()=>{
   if(window.scrollY > 300){
-
-
+   $('.navigation').css('width : 0');
   }else{
     // $('.navigation').fadeIn();
   }
