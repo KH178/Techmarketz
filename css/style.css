@@ -1401,11 +1401,10 @@ article {
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 2px;
   display: inline-block;
-  height: 300px;
+  height: 350px;
   margin: 3rem;
   position: relative;
-  width: 300px;
-  font-size: 1.5rem;
+  width: 350px;
   outline: 1rem solid #00c2e5; }
   @media only screen and (max-width: 56.25em) {
     .card {
@@ -1414,11 +1413,7 @@ article {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       background-color: #00c2e5;
       outline: 1rem solid #fff;
-      color: #fff; }
-      .card-heading {
-        margin: 1rem 2rem 2rem 2rem;
-        font-size: 3rem;
-        color: #333; } }
+      color: #fff; } }
   @media only screen and (max-width: 56.25em) and (max-width: 50.5em) {
     .card-heading {
       margin: 1rem 2rem 2rem 2rem;
@@ -1436,9 +1431,10 @@ article {
       color: #00c2e5;
       background: #fff;
       border: 2.5px dashed #00c2e5;
-      position: relative;
       top: -1rem;
       transform: rotate(360deg); }
+  .card-icon-container {
+    display: block; }
   @media only screen and (max-width: 56.25em) {
     .card {
       width: 100%;
@@ -1449,9 +1445,12 @@ article {
     left: 50%;
     top: 10%;
     transform: translate(-50%); }
-    @media only screen and (max-width: 56.25em) {
-      .card-service__text-wrap {
-        padding: 3rem 0; } }
+    .card-service__text-wrap {
+      display: block;
+      padding: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .card-service__text-wrap {
+          padding: 0rem 0; } }
   .card .icon-pos {
     position: relative;
     top: -8rem;
@@ -1471,7 +1470,7 @@ article {
     @media only screen and (max-width: 56.25em) {
       .card-btn {
         background-color: #fff;
-        margin: .5rem;
+        margin: 2rem;
         color: #00c2e5; } }
 
 .contact-us__container {
