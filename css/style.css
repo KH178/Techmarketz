@@ -700,7 +700,7 @@ body {
 
 .about-header {
   text-align: center;
-  background-image: url("./../../img/about-header.jpg");
+  background-image: url(./../img/about-header.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%; }
@@ -1290,7 +1290,7 @@ article {
   transform: translate(-50%); }
 
 .get-started {
-  background-image: url("./../../img/poly.jpg");
+  background-image: url("../img/poly.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 30rem; }
