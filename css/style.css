@@ -177,6 +177,36 @@ body {
   .sub-heading:hover::after {
     width: 100%; }
 
+.sub-heading-2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: inline-block; }
+  .sub-heading-2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2.5px;
+    background: #00b7ff;
+    transition: width .6s; }
+  .sub-heading-2:hover::after {
+    width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .sub-heading-2::after {
+      display: block;
+      width: 50%;
+      background: #fff; } }
+
+.paragraph-2 {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .paragraph-2 {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 50.5em) {
+    .paragraph-2 {
+      font-size: 1.3rem;
+      line-height: 1.5rem; } }
+
 .paragraph {
   font-size: 1.5rem; }
   @media only screen and (max-width: 56.25em) {
@@ -703,7 +733,14 @@ body {
   background-image: url(../img/about-header.jpg);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  min-height: 300px; }
+
+.services-header {
+  text-align: center;
+  background-image: url(../img/services-header.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 300px; }
 
 .navigation {
   transition: all .3s;
@@ -1269,19 +1306,19 @@ article {
     font-size: 10rem; }
     @media only screen and (max-width: 56.25em) {
       .about__main-title {
-        padding: 10rem 0; }
+        padding: 12rem 0; }
         .about__main-title .heading-primary {
-          font-size: 5rem !important; } }
+          font-size: 8rem !important; } }
     @media only screen and (max-width: 70em) {
+      .about__main-title {
+        padding: 17rem 0; }
+        .about__main-title .heading-primary {
+          font-size: 7rem !important; } }
+    @media only screen and (max-width: 50.5em) {
       .about__main-title {
         padding: 15rem 0; }
         .about__main-title .heading-primary {
-          font-size: 5rem !important; } }
-    @media only screen and (max-width: 50.5em) {
-      .about__main-title {
-        padding: 2rem 0; }
-        .about__main-title .heading-primary {
-          font-size: 4rem !important; } }
+          font-size: 3rem !important; } }
 
 .text-wrap {
   width: 90%;
@@ -1327,62 +1364,115 @@ article {
     color: #777;
     font-weight: 400; }
 
-.service-page__container {
-  height: 60vh;
-  background: url("https://picsum.photos/200/300") no-repeat;
-  background-size: 100%;
-  background-position: top; }
+.services__main-title {
+  color: #fff;
+  padding: 20rem 0;
+  font-size: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .services__main-title {
+      padding: 12rem 0; }
+      .services__main-title .heading-primary {
+        font-size: 8rem !important; } }
+  @media only screen and (max-width: 70em) {
+    .services__main-title {
+      padding: 17rem 0; }
+      .services__main-title .heading-primary {
+        font-size: 7rem !important; } }
+  @media only screen and (max-width: 50.5em) {
+    .services__main-title {
+      padding: 15rem 0; }
+      .services__main-title .heading-primary {
+        font-size: 3rem !important; } }
 
 .service-list {
   height: 100%; }
   .service-list__container {
     margin-top: 7rem;
-    width: 80%;
+    width: 80vw;
     position: relative;
     left: 50%;
     top: 20%;
+    text-align: center;
     transform: translate(-50%); }
-
-body {
-  background: #e2e1e0; }
 
 .card {
   background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 2px;
   display: inline-block;
   height: 300px;
   margin: 3rem;
   position: relative;
   width: 300px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  outline: 1rem solid #00c2e5; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      background: #00c2e5;
+      color: #fff;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      background-color: #00c2e5;
+      outline: 1rem solid #fff;
+      color: #fff; }
+      .card-heading {
+        margin: 1rem 2rem 2rem 2rem;
+        font-size: 3rem;
+        color: #333; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 50.5em) {
+    .card-heading {
+      margin: 1rem 2rem 2rem 2rem;
+      font-size: 1.8rem;
+      color: #333; } }
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: #00c2e5;
+    outline: 1rem solid #fff;
+    color: #fff; }
+    .card:hover .sub-heading-2::after {
+      background: white;
+      width: 100%; }
+    .card:hover .icon-pos {
+      color: #00c2e5;
+      background: #fff;
+      border: 2.5px dashed #00c2e5;
+      position: relative;
+      top: -1rem;
+      transform: rotate(360deg); }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      width: 100%;
+      margin: 0rem; } }
   .card-service {
     position: absolute;
     width: 80%;
     left: 50%;
     top: 10%;
     transform: translate(-50%); }
+    @media only screen and (max-width: 56.25em) {
+      .card-service__text-wrap {
+        padding: 3rem 0; } }
   .card .icon-pos {
     position: relative;
-    top: -7rem; }
-
-.card-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-
-.card-1:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.card-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
-.card-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-
-.card-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.card-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+    top: -8rem;
+    border: 5px solid #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .card .icon-pos {
+        top: -1rem;
+        color: #00c2e5;
+        background: #fff;
+        border: 2.5px dashed #00c2e5;
+        position: relative;
+        top: -1rem;
+        transform: rotate(360deg); } }
+  .card-btn {
+    margin: 1rem;
+    font-weight: 700; }
+    @media only screen and (max-width: 56.25em) {
+      .card-btn {
+        background-color: #fff;
+        margin: .5rem;
+        color: #00c2e5; } }
 
 .contact-us__container {
   height: 60vh;
