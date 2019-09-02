@@ -698,7 +698,7 @@ body {
 .header {
   max-width: 100%;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(178, 252, 255, 0.7), rgba(62, 100, 255, 0.7)), url(../img/header.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 194, 229, 0.7), rgba(0, 194, 229, 0.1)), url(../img/header.jpg);
   background-size: cover;
   background-position: top; }
   .header__bullet-points {
